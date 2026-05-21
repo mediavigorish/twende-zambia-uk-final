@@ -1,0 +1,130 @@
+<!-- 
+  Twende Zambia UK — Reusable Sticky Navbar Component Reference
+  This navbar exhibits Zambian accent colors: emerald green, pure black, and copper-orange.
+-->
+<header id="navbar-header" class="fixed top-0 left-0 w-full bg-white py-5 shadow-sm transition-all duration-300 z-[1000] border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between">
+      
+      <!-- Brand Logo / Emblem -->
+      <a href="index.html" class="flex items-center space-x-3 group" aria-label="Twende Zambia UK Home">
+        <div class="relative w-12 h-12 rounded-xl bg-gradient-to-br from-[#009A44] to-[#028640] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-all duration-300">
+          <!-- Stylized flying eagle representing Zambia strength -->
+          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <div class="absolute -bottom-1 -right-1 w-4.5 h-4.5 bg-[#FFCD00] rounded-full border-2 border-white flex items-center justify-center shadow-sm">
+            <span class="text-[8px] font-black text-black">UK</span>
+          </div>
+        </div>
+        <div>
+          <span class="block text-lg font-bold text-gray-900 tracking-tight font-display leading-tight group-hover:text-[#009A44] transition-colors">
+            Twende Zambia <span class="text-[#E57200]">UK</span>
+          </span>
+          <span class="block text-[10px] text-gray-500 font-mono tracking-widest uppercase leading-none">
+            Bereavement Community
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu Links -->
+      <nav class="hidden lg:flex items-center space-x-8" aria-label="Primary Desktop Navigation">
+        <a href="index.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] focus:ring-offset-2 rounded-md">
+          Home
+        </a>
+        <a href="about.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] focus:ring-offset-2 rounded-md">
+          About Us
+        </a>
+        <a href="support.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] focus:ring-offset-2 rounded-md">
+          Bereavement Support
+        </a>
+        <a href="membership.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] focus:ring-offset-2 rounded-md">
+          Membership
+        </a>
+        <a href="gallery.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] focus:ring-offset-2 rounded-md">
+          Community Gallery
+        </a>
+        <a href="contact.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] focus:ring-offset-2 rounded-md">
+          Contact Us
+        </a>
+      </nav>
+
+      <!-- Desktop Call to Actions -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <a href="membership.html#join-form-anchor" class="bg-black hover:bg-[#009A44] text-white text-sm font-bold px-5 py-2.5 rounded-xl transition duration-200 shadow-sm shadow-black/10 flex items-center gap-2">
+          <span>Join Community</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-button" class="lg:hidden p-2 rounded-xl text-gray-600 hover:text-black hover:bg-gray-100 transition-colors focus:outline-none" aria-label="Open mobile menu" aria-expanded="false">
+        <svg class="w-6.5 h-6.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Sidebar Drawers overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[2000] hidden pointer-events-none transition-all duration-300"></div>
+
+<!-- Mobile Sidebar Drawer Content panel -->
+<div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-white z-[2010] shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+  
+  <!-- Sidebar Header Panel -->
+  <div class="p-6 border-b border-gray-100 flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <div class="w-8 h-8 rounded-lg bg-[#009A44] flex items-center justify-center text-white">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+      </div>
+      <span class="text-md font-bold text-gray-900 font-display">Twende Zambia</span>
+    </div>
+    
+    <button id="mobile-menu-close" class="p-2 rounded-lg text-gray-500 hover:text-black hover:bg-gray-100 transition" aria-label="Close mobile sidebar">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Drawer Body Navigation Links -->
+  <div class="flex-1 overflow-y-auto px-6 py-8">
+    <nav class="flex flex-col space-y-5" aria-label="Primary Mobile Navigation">
+      <a href="index.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] transition-colors py-2 block border-b border-gray-50">
+        Home
+      </a>
+      <a href="about.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] transition-colors py-2 block border-b border-gray-50">
+        About Us
+      </a>
+      <a href="support.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] transition-colors py-2 block border-b border-gray-50">
+        Bereavement Support
+      </a>
+      <a href="membership.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] transition-colors py-2 block border-b border-gray-50">
+        Membership Dues
+      </a>
+      <a href="gallery.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] transition-colors py-2 block border-b border-gray-50">
+        Community Gallery
+      </a>
+      <a href="contact.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] transition-colors py-2 block border-b border-gray-50">
+        Contact Us
+      </a>
+    </nav>
+  </div>
+
+  <!-- Drawer Footer Panel with Call to Actions -->
+  <div class="p-6 border-t border-gray-100 bg-gray-50/80 space-y-4">
+    <a href="membership.html#join-form-anchor" class="w-full bg-black hover:bg-[#009A44] text-white text-center font-bold px-4 py-3 rounded-xl transition block duration-200">
+      Join Community
+    </a>
+    <div class="text-center text-xs text-gray-500 font-medium">
+      Together we support each other during difficult times.
+    </div>
+  </div>
+</div>

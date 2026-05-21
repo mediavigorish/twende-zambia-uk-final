@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership — Twende Zambia UK | Secure Registry</title>
+  
+  <meta name="description" content="Join Twende Zambia UK. Annual fees: Adults £10, Children £5. Access reliable, peer-to-peer mutual £10,000 bereavement coverage and support." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#009A44',
+              emerald: '#028640',
+              orange: '#E57200',
+              copper: '#DE3831',
+              gold: '#EFB21E',
+              dark: '#111111',
+              cream: '#FAFAFA'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50/50 text-gray-800 pt-[88px] font-sans antialiased">
+
+  <!-- ==========================================================
+     STICKY NAVIGATION BAR
+     ========================================================== -->
+  <header id="navbar-header" class="fixed top-0 left-0 w-full bg-white py-5 shadow-sm transition-all duration-300 z-[1000] border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <a href="index.html" class="flex items-center space-x-3 group" aria-label="Twende Zambia UK Home">
+          <div class="relative w-12 h-12 rounded-xl bg-gradient-to-br from-[#009A44] to-[#028640] flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-all duration-300">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <div class="absolute -bottom-1 -right-1 w-4.5 h-4.5 bg-[#FFCD00] rounded-full border-2 border-white flex items-center justify-center shadow-sm">
+              <span class="text-[8px] font-black text-black">UK</span>
+            </div>
+          </div>
+          <div>
+            <span class="block text-lg font-bold text-gray-900 tracking-tight font-display leading-tight group-hover:text-[#009A44] transition-colors">
+              Twende Zambia <span class="text-[#E57200]">UK</span>
+            </span>
+            <span class="block text-[10px] text-gray-500 font-mono tracking-widest uppercase leading-none">
+              Bereavement Community
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center space-x-8" aria-label="Primary Desktop Navigation">
+          <a href="index.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] rounded-md">
+            Home
+          </a>
+          <a href="about.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] rounded-md">
+            About Us
+          </a>
+          <a href="support.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] rounded-md">
+            Bereavement Support
+          </a>
+          <a href="membership.html" class="text-sm font-semibold text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] rounded-md">
+            Membership
+          </a>
+          <a href="gallery.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] rounded-md">
+            Community Gallery
+          </a>
+          <a href="contact.html" class="text-sm font-semibold text-gray-700 hover:text-[#009A44] transition-colors focus:outline-none focus:ring-2 focus:ring-[#009A44] rounded-md">
+            Contact Us
+          </a>
+        </nav>
+
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="#join-form-anchor" class="bg-black hover:bg-[#009A44] text-white text-sm font-bold px-5 py-2.5 rounded-xl transition duration-200 shadow-sm shadow-black/10 flex items-center gap-2">
+            <span>Join Community</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+
+        <button id="mobile-menu-button" class="lg:hidden p-2 rounded-xl text-gray-600 hover:text-black hover:bg-gray-100 transition-colors focus:outline-none" aria-label="Open mobile menu">
+          <svg class="w-6.5 h-6.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawers -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[2000] hidden pointer-events-none transition-all duration-300"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-white z-[2010] shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-6 border-b border-gray-100 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 rounded-lg bg-[#009A44] flex items-center justify-center text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+          </svg>
+        </div>
+        <span class="text-md font-bold text-gray-900 font-display">Twende Zambia</span>
+      </div>
+      <button id="mobile-menu-close" class="p-2 rounded-lg text-gray-500 hover:text-black hover:bg-gray-100 transition" aria-label="Close mobile navigation">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex-1 overflow-y-auto px-6 py-8">
+      <nav class="flex flex-col space-y-5" aria-label="Mobile Navigation Drawer">
+        <a href="index.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] py-2 block border-b border-gray-50">Home</a>
+        <a href="about.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] py-2 block border-b border-gray-50">About Us</a>
+        <a href="support.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] py-2 block border-b border-gray-50">Bereavement Support</a>
+        <a href="membership.html" class="text-base font-semibold text-[#009A44] py-2 block border-b border-gray-50">Membership</a>
+        <a href="gallery.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] py-2 block border-b border-gray-50">Gallery</a>
+        <a href="contact.html" class="text-base font-semibold text-gray-800 hover:text-[#009A44] py-2 block border-b border-gray-50">Contact Us</a>
+      </nav>
+    </div>
+    <div class="p-6 border-t border-gray-100 bg-gray-50/80 space-y-4">
+      <a href="#join-form-anchor" class="w-full bg-black hover:bg-[#009A44] text-white text-center font-bold px-4 py-3 rounded-xl transition block duration-200">
+        Join Community
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================
+     PAGE SUBHEADER HERO
+     ========================================================== -->
+  <section class="bg-gradient-to-br from-[#009A44]/5 via-[#FFCD00]/5 to-white py-14 sm:py-20 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#E57200] font-mono bg-[#E57250]/15 px-3.5 py-1.5 rounded-full">Support Pricing Parameters</span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 font-display mt-5 tracking-tight">
+        Membership Plans & Contributions
+      </h1>
+      <p class="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto mt-4 leading-relaxed">
+        Maintaining transparent, affordable annual registrations to construct high-volume solid support when dealing with grief.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================
+     MEMBERSHIP PLANS & VALUE COMPARISON
+     ========================================================== -->
+  <section class="py-16 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Adult Plan Card -->
+        <div class="bg-[#FAFAFA] border border-gray-100 rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs uppercase font-bold tracking-wider text-[#009A44]">Adult Registry</span>
+            <div class="flex items-baseline space-x-1">
+              <span class="text-5xl font-extrabold font-display text-gray-900">£10</span>
+              <span class="text-gray-500 text-xs text-sans font-medium">/ annually</span>
+            </div>
+            <p class="text-xs text-gray-500 font-sans">
+              For individuals aged 18 and older living within the United Kingdom. Covers standard membership privileges in the community database.
+            </p>
+            
+            <ul class="space-y-3 pt-4 border-t border-gray-200 text-xs">
+              <li class="flex items-center space-x-2.5">
+                <svg class="w-4 h-4 text-[#009A44] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Full Repatriation £10,000 Benefit</span>
+              </li>
+              <li class="flex items-center space-x-2.5">
+                <svg class="w-4 h-4 text-[#009A44] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Full Voting rights & community assembly privileges</span>
+              </li>
+              <li class="flex items-center space-x-2.5">
+                <svg class="w-4 h-4 text-[#009A44] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Instant access to exclusive WhatsApp group</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="#join-form-anchor" class="w-full bg-black hover:bg-[#009A44] text-white text-center font-bold text-xs py-3.5 rounded-xl block transition">
+              Select Adult Plan
+            </a>
+          </div>
+        </div>
+
+        <!-- Child Plan Card -->
+        <div class="bg-[#FAFAFA] border border-gray-100 rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs uppercase font-bold tracking-wider text-[#E57200]">Child Registry Dep</span>
+            <div class="flex items-baseline space-x-1">
+              <span class="text-5xl font-extrabold font-display text-gray-900">£5</span>
+              <span class="text-gray-500 text-xs text-sans font-medium">/ annually</span>
+            </div>
+            <p class="text-xs text-gray-500 font-sans">
+              For dependents aged under 18 registered under active parent/guardian memberships who are currently resident inside the UK.
+            </p>
+            
+            <ul class="space-y-3 pt-4 border-t border-gray-200 text-xs">
+              <li class="flex items-center space-x-2.5">
+                <svg class="w-4 h-4 text-[#009A44] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Full Repatriation £10,000 Benefit</span>
+              </li>
+              <li class="flex items-center space-x-2.5">
+                <svg class="w-4 h-4 text-[#009A44] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Registered directly under parent profile</span>
+              </li>
+              <li class="flex items-center space-x-2.5">
+                <svg class="w-4 h-4 text-gray-300 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+                <span class="text-gray-400">No independent database voting rights</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="#join-form-anchor" class="w-full bg-black hover:bg-[#E57200] text-white text-center font-bold text-xs py-3.5 rounded-xl block transition">
+              Select Child Plan
+            </a>
+          </div>
+        </div>
+
+        <!-- The £30 and Maturity Rules Card -->
+        <div class="bg-gradient-to-br from-[#009A44] to-[#028640] text-white rounded-3xl p-8 shadow-md flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs uppercase font-black tracking-wider text-[#FFCD00]">Scheme Solidity Rules</span>
+            <div class="text-3xl font-extrabold font-display text-white tracking-tight leading-snug">
+              6-Month Active Maturity Rule
+            </div>
+            <p class="text-xs text-white/85 leading-relaxed font-sans">
+              To guarantee that the Twende Zambia UK mutual aid platform is sustainable and insulated against opportunists registering only after sickness or death:
+            </p>
+            
+            <ul class="space-y-3 pt-4 border-t border-white/25 text-xs">
+              <li class="flex items-start space-x-2.5">
+                <svg class="w-4.5 h-4.5 text-[#FFCD00] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <span>To be eligible for the £10,000 payout, members must be part of the community for at least six months.</span>
+              </li>
+              <li class="flex items-start space-x-2.5">
+                <svg class="w-4.5 h-4.5 text-[#FFCD00] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span>By contributing just £30 per active loss, together we raise the £10,000 once we reach 335 members.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <span class="block text-[10px] text-center text-white/70 font-mono uppercase tracking-wider">
+              Together we stand!
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================
+     CORE BENEFITS SHORT DIRECTORY
+     ========================================================== -->
+  <section class="py-12 bg-gray-50/50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex items-start space-x-4">
+          <div class="w-10 h-10 bg-white rounded-xl border border-gray-100 flex items-center justify-center text-[#009A44] flex-shrink-0 mt-1 shadow-sm">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 text-sm sm:text-base font-display">100% Secure Trust Chest</h4>
+            <p class="text-xs text-gray-500 leading-relaxed mt-1">Dues are managed directly through a registered transparent bank account with full structural oversight.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-10 h-10 bg-white rounded-xl border border-gray-100 flex items-center justify-center text-[#E57200] flex-shrink-0 mt-1 shadow-sm">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 text-sm sm:text-base font-display">Shared Mutual Burden</h4>
+            <p class="text-xs text-gray-500 leading-relaxed mt-1">A simple, transparent peer contribution of £30 avoids giant funeral loans during mourning processes.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="w-10 h-10 bg-white rounded-xl border border-gray-100 flex items-center justify-center text-purple-600 flex-shrink-0 mt-1 shadow-sm">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-900 text-sm sm:text-base font-display">Real Time WhatsApp Hub</h4>
+            <p class="text-xs text-gray-500 leading-relaxed mt-1">Involvement in direct interactive peer assemblies regarding welfare planning and coordinate announcements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================
+     PRIMARY INTERACTIVE REGISTRATION FORM + CALC
+     ========================================================== -->
+  <section id="join-form-anchor" class="py-16 sm:py-24 bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left details panel with Live Fee Calculator -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="p-6 bg-gray-50 border border-gray-100 rounded-3xl space-y-5">
+            <h3 class="text-xl font-bold text-gray-900 font-display">Fee Live Calculator</h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Adjust counts of adult and child memberships below to preview your initial annual subscription dues:
+            </p>
+
+            <div class="space-y-4">
+              <!-- Qty Adults -->
+              <div>
+                <label for="qty-adults" class="block text-xs font-semibold text-gray-650 uppercase tracking-wider">Number of Adults (£10/ea)</label>
+                <input 
+                  type="number" 
+                  id="qty-adults" 
+                  min="1" 
+                  value="1" 
+                  class="mt-1.5 w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44]"
+                />
+              </div>
+
+              <!-- Qty Children -->
+              <div>
+                <label for="qty-children" class="block text-xs font-semibold text-gray-650 uppercase tracking-wider">Number of Children (£5/ea)</label>
+                <input 
+                  type="number" 
+                  id="qty-children" 
+                  min="0" 
+                  value="0" 
+                  class="mt-1.5 w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44]"
+                />
+              </div>
+            </div>
+
+            <!-- Calculated Summary box -->
+            <div class="bg-white border border-gray-100 p-4 rounded-2xl space-y-2 text-xs">
+              <div class="flex items-center justify-between text-gray-500">
+                <span>Adult Enrollment Subtotal:</span>
+                <strong id="calc-adults-total" class="font-mono text-gray-900">£10</strong>
+              </div>
+              <div class="flex items-center justify-between text-gray-500">
+                <span>Child Enrollment Subtotal:</span>
+                <strong id="calc-children-total" class="font-mono text-gray-900">£0</strong>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between text-base font-bold text-gray-900">
+                <span>Total Annual Dues:</span>
+                <strong id="calc-grand-total" class="font-mono text-[#009A44]">£10</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust badge -->
+          <div class="p-6 bg-[#009A44]/5 rounded-3xl flex items-start space-x-3 border border-[#009A44]/10">
+            <svg class="w-5 h-5 text-[#009A44] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2-0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+            <div class="text-[11px] text-gray-500 leading-normal">
+              Your application data is heavily guarded and protected under strict European and United Kingdom General Data Protection Regulation (GDPR) frameworks.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Main Registry Application Form -->
+        <div class="lg:col-span-8 bg-gray-50/50 border border-gray-100 p-8 sm:p-10 rounded-3xl">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 font-display">Diaspora Membership Registry Form</h3>
+            <p class="text-xs text-gray-500 mt-1">Please complete your biographical details accurately to lodge registration processing.</p>
+          </div>
+
+          <form id="membership-application-form" class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              
+              <!-- First Name -->
+              <div>
+                <label for="member-firstname" class="block text-xs font-semibold text-gray-700 uppercase tracking-wide">First Name *</label>
+                <input 
+                  type="text" 
+                  id="member-firstname" 
+                  placeholder="Kondwani" 
+                  class="mt-1.5 w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44]" 
+                  required
+                />
+              </div>
+
+              <!-- Last Name -->
+              <div>
+                <label for="member-lastname" class="block text-xs font-semibold text-gray-700 uppercase tracking-wide">Last Name *</label>
+                <input 
+                  type="text" 
+                  id="member-lastname" 
+                  placeholder="Musonda" 
+                  class="mt-1.5 w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44]" 
+                  required
+                />
+              </div>
+
+              <!-- Email Address -->
+              <div>
+                <label for="member-email" class="block text-xs font-semibold text-gray-700 uppercase tracking-wide">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="member-email" 
+                  placeholder="your.name@gmail.com" 
+                  class="mt-1.5 w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44]" 
+                  required
+                />
+              </div>
+
+              <!-- Phone Contact number -->
+              <div>
+                <label for="member-phone" class="block text-xs font-semibold text-gray-700 uppercase tracking-wide">UK Phone Number Contact *</label>
+                <input 
+                  type="tel" 
+                  id="member-phone" 
+                  placeholder="+44 7376 575093" 
+                  class="mt-1.5 w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44]" 
+                  required
+                />
+              </div>
+
+            </div>
+
+            <!-- Address Field -->
+            <div>
+              <label for="member-address" class="block text-xs font-semibold text-gray-700 uppercase tracking-wide">UK Residential Address *</label>
+              <input 
+                type="text" 
+                id="member-address" 
+                placeholder="104 Piccadilly Street, London, W1J 7ND" 
+                class="mt-1.5 w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44]" 
+                required
+              />
+            </div>
+
+            <!-- Dependency checklist declaration -->
+            <div class="bg-white p-5 rounded-2xl border border-gray-100 text-xs text-gray-500 leading-relaxed">
+              <span class="block text-gray-900 font-bold mb-1 uppercase tracking-wider text-[11px]">Dependent Registration Information:</span>
+              Once this initial biographical registry application is received and validated, our diaspora desk officer will contact you over WhatsApp or Email to log your dependents names, collect annual payments, and finalize details.
+            </div>
+
+            <!-- Terms validation toggle -->
+            <div class="flex items-start space-x-3 pt-2">
+              <input 
+                type="checkbox" 
+                id="member-terms" 
+                class="mt-0.5 rounded border-gray-300 text-[#009A44] focus:ring-[#009A44]" 
+                required
+              />
+              <label for="member-terms" class="text-xs text-gray-500 leading-normal">
+                I hereby declare that I am a Zambian currently residing in the UK. I accept the commitment to regularly contribute <strong class="text-gray-900">£30 per loss notification</strong>, and acknowledge that the <strong class="text-gray-900">£10,000 payout</strong> has a strict <strong class="text-[#009A44]">6-month maturity rules threshold</strong>. *
+              </label>
+            </div>
+
+            <!-- Submit trigger -->
+            <div>
+              <button 
+                type="submit" 
+                class="bg-gradient-to-r from-[#009A44] to-[#028640] text-white font-bold px-8 py-4 rounded-xl shadow-md transition-all active:scale-[0.98]"
+              >
+                Submit Registry Application
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================
+     FREQUENTLY ASKED QUESTIONS
+     ========================================================== -->
+  <section class="py-16 sm:py-24 bg-[#FAFAFA] border-b border-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-14 space-y-3">
+        <span class="text-xs uppercase font-mono font-bold tracking-widest text-[#009A44]">clarity of rules</span>
+        <h2 class="text-3xl font-bold font-display text-gray-900 tracking-tight">Frequently Answered Queries</h2>
+        <p class="text-sm text-gray-500">
+          Everything regarding the bereavement mutual support system explained plainly.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- Accordion Q1 -->
+        <details class="group bg-white border border-gray-100 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden" open>
+          <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+            <h3 class="text-sm sm:text-base font-bold text-gray-900 font-display">
+              Does this scheme cover relatives visiting from Zambia?
+            </h3>
+            <span class="ml-1.5 flex-shrink-0 rounded-full bg-gray-50 p-1.5 text-gray-900 group-open:rotate-180 transition duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-xs sm:text-sm text-gray-500 leading-relaxed font-sans">
+            No, our Twende Zambia UK bereavement scheme strictly covers registered members and their dependents who are official, active residents living in the United Kingdom. It is designed to aid diaspora residents regarding foreign repatriation complications back to Zambia.
+          </p>
+        </details>
+
+        <!-- Accordion Q2 -->
+        <details class="group bg-white border border-gray-100 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+            <h3 class="text-sm sm:text-base font-bold text-gray-900 font-display">
+              How exactly is the £10,000 repatriation money raised and stored?
+            </h3>
+            <span class="ml-1.5 flex-shrink-0 rounded-full bg-gray-50 p-1.5 text-gray-900 group-open:rotate-180 transition duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-xs sm:text-sm text-gray-500 leading-relaxed font-sans">
+            Our platform functions as an active diaspora crowdfunding/mutual aid network. Once our target list of 335 members is reached, each member's commit of £30 generates a pool of £10,000. These funds are held in a secure UK bank account, regulated by community trustees, and released within 48-72 hours of verified bereavement reports.
+          </p>
+        </details>
+
+        <!-- Accordion Q3 -->
+        <details class="group bg-white border border-gray-100 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+            <h3 class="text-sm sm:text-base font-bold text-gray-900 font-display">
+              What happens if an active member fails to pay their £30 contribution?
+            </h3>
+            <span class="ml-1.5 flex-shrink-0 rounded-full bg-gray-50 p-1.5 text-gray-900 group-open:rotate-180 transition duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-xs sm:text-sm text-gray-500 leading-relaxed font-sans">
+            Solidarity relies on absolute commitment. If a member fails to fulfill their £30 bereavement contribution within the designated 14-day grace window, their membership status defaults to inactive. Inactive members cannot benefit from the £10,000 payout coverage until outstanding dues are paid, and a penalty reinstatement fee is cleared.
+          </p>
+        </details>
+
+        <!-- Accordion Q4 -->
+        <details class="group bg-white border border-gray-100 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+            <h3 class="text-sm sm:text-base font-bold text-gray-900 font-display">
+              Why is there a strict 6-month maturity waiting rule for the £10,000 payout?
+            </h3>
+            <span class="ml-1.5 flex-shrink-0 rounded-full bg-gray-50 p-1.5 text-gray-900 group-open:rotate-180 transition duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <p class="mt-4 text-xs sm:text-sm text-gray-500 leading-relaxed font-sans">
+            To prevent fraud and maintain financial balance, new registered members must maintain their dues for 6 months before being eligible for the full £10,000 payout. If bereavement happens within this initial 6-month maturity interval, the family receives compassionate mental support, but is not eligible for the total cash repatriation benefit.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================
+     FOOTER SECTION
+     ========================================================== -->
+  <footer class="bg-[#111111] text-gray-300 pt-16 pb-12 overflow-hidden border-t-4 border-[#009A44]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
+        
+        <div class="lg:col-span-4 space-y-5">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-lg bg-[#009A44] flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21l-8.244-4.71c-1.165-.667-1.165-2.337 0-3L12 8.586l8.244 4.704c1.165.667 1.165 2.337 0 3L12 21z"></path>
+              </svg>
+            </div>
+            <span class="text-xl font-bold font-display text-white tracking-tight">
+              Twende Zambia <span class="text-[#E57200]">UK</span>
+            </span>
+          </div>
+          <p class="text-xs lg:text-sm text-gray-400 leading-relaxed font-sans">
+            We are an independent, non-partisan, non-profit community platform supporting fellow Zambians living in the United Kingdom financially during times of distress, bereavement, and the repatriation of loved ones back home.
+          </p>
+          <div class="flex items-center space-x-4">
+            <a href="https://facebook.com" class="w-9 h-9 bg-white/5 hover:bg-[#009A44] hover:text-white rounded-lg flex items-center justify-center text-gray-400 transition" aria-label="Facebook Page Link">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.75z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/447376575093" target="_blank" class="w-9 h-9 bg-white/5 hover:bg-[#25D366] hover:text-white rounded-lg flex items-center justify-center text-gray-400 transition animate-pulse" aria-label="WhatsApp Contact Link">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.012 2c-5.522 0-9.99 4.478-9.99 10.002 0 1.802.468 3.54 1.358 5.074l-1.378 5.04 5.16-1.354a9.914 9.914 0 004.85 1.242h.004c5.522 0 10.002-4.478 10.002-10 0-5.524-4.48-10.004-10.006-10.004zm-.008 1.802c4.524 0 8.2 3.674 8.2 8.2 0 4.524-3.676 8.2-8.204 8.2a8.13 8.13 0 01-4.226-1.178l-.304-.18-3.138.824.84-3.078-.198-.314a8.15 8.15 0 01-1.252-4.272c0-4.526 3.678-8.2 8.222-8.2zm-3.52 4.48c-.228 0-.46.046-.66.19a1.693 1.693 0 00-.638 1.304c0 .88.528 1.764 1.2 2.652 1.372 1.838 2.822 3.12 4.664 3.864.55.22.996.262 1.36.208.4-.06.84-.344 1.002-.746.162-.402.162-.748.114-.82-.048-.072-.174-.114-.366-.21-.192-.096-1.138-.562-1.314-.626-.176-.064-.304-.096-.432.096-.128.192-.496.626-.608.754-.112.128-.224.144-.416.048-.192-.096-.81-.3-1.544-.954-.57-.508-.956-1.136-1.068-1.328-.112-.192-.012-.296.084-.392.086-.086.192-.224.288-.336.096-.112.128-.192.192-.32.064-.128.032-.24-.016-.336-.048-.096-.432-1.04-.592-1.424-.156-.374-.316-.324-.432-.324z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 space-y-4">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-display">
+            Quick links
+          </h4>
+          <ul class="space-y-2 text-xs lg:text-sm">
+            <li><a href="index.html" class="hover:text-white hover:underline transition">Home Platform</a></li>
+            <li><a href="about.html" class="hover:text-white hover:underline transition">Our Mission</a></li>
+            <li><a href="support.html" class="hover:text-white hover:underline transition">Bereavement Help</a></li>
+            <li><a href="membership.html" class="hover:text-white hover:underline transition uppercase text-[#009A44] font-semibold">Membership Fees</a></li>
+            <li><a href="gallery.html" class="hover:text-white hover:underline transition">Gallery Archive</a></li>
+            <li><a href="contact.html" class="hover:text-white hover:underline transition">Get Connected</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4 text-xs lg:text-sm">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-display">
+            Direct Contacts
+          </h4>
+          <ul class="space-y-3.5 text-gray-400 font-sans">
+            <li class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-[#E57200] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2-0 00-2-2H5a2 2-0 00-2 2v10a2 2-0 002 2z"></path>
+              </svg>
+              <span>
+                <strong class="block text-white">Email Address:</strong>
+                <a href="mailto:info@twendezambia.co.uk" class="hover:text-white transition">info@twendezambia.co.uk</a>
+              </span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-[#E57200] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span>
+                <strong class="block text-white">Phone Support:</strong>
+                <a href="tel:+447376575093" class="hover:text-white transition">+44 7376 575093</a>
+              </span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <svg class="w-5 h-5 text-[#E57200] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"></path>
+              </svg>
+              <span>
+                <strong class="block text-white">Official Website:</strong>
+                <a href="https://www.twendezambia.co.uk" target="_blank" class="hover:text-white transition">www.twendezambia.co.uk</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider font-display">
+            Stay Informed
+          </h4>
+          <p class="text-xs text-gray-400">
+            Sign up for our bulletin to receive dates of community assemblies, financial disclosures, and support updates.
+          </p>
+          <form id="newsletter-form" class="space-y-2">
+            <input 
+              type="email" 
+              placeholder="your.email@gmail.com" 
+              class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-xs focus:ring-1 focus:ring-[#009A44] focus:outline-none focus:border-[#009A44] text-white" 
+              required
+            />
+            <button type="submit" class="w-full bg-gradient-to-r from-[#009A44] to-[#028640] hover:from-[#028640] hover:to-[#009A44] text-white font-bold text-xs py-3 rounded-xl transition shadow-md">
+              Subscribe to Bulletin
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-500">
+        <div class="mb-4 sm:mb-0 text-center sm:text-left">
+          <p class="font-semibold text-gray-400">© 2026 Twende Zambia UK. All Rights Reserved.</p>
+          <p class="mt-1 text-gray-500 max-w-md">
+            Independent, non-partisan, non-governmental, and strictly non-profit Zambian diaspora mutual aid scheme. Registered in the UK.
+          </p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="about.html" class="hover:text-white transition">Sovereignty & Values</a>
+          <a href="membership.html" class="hover:text-white transition">Contribution Standards</a>
+          <a href="contact.html" class="hover:text-white transition">Support Inquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Floating Actions -->
+  <a href="https://wa.me/447376575093" target="_blank" rel="noopener noreferrer" class="whatsapp-float whatsapp-ring" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8 fill-current text-white" viewBox="0 0 24 24">
+      <path d="M12.012 2c-5.522 0-9.99 4.478-9.99 10.002 0 1.802.468 3.54 1.358 5.074l-1.378 5.04 5.16-1.354a9.914 9.914 0 004.85 1.242h.004c5.522 0 10.002-4.478 10.002-10 0-5.524-4.48-10.004-10.006-10.004zm-.008 1.802c4.524 0 8.2 3.674 8.2 8.2 0 4.524-3.676 8.2-8.204 8.2a8.13 8.13 0 01-4.226-1.178l-.304-.18-3.138.824.84-3.078-.198-.314a8.15 8.15 0 01-1.252-4.272c0-4.526 3.678-8.2 8.222-8.2zm-3.52 4.48c-.228 0-.46.046-.66.19a1.693 1.693 0 00-.638 1.304c0 .88.528 1.764 1.2 2.652 1.372 1.838 2.822 3.12 4.664 3.864.55.22.996.262 1.36.208.4-.06.84-.344 1.002-.746.162-.402.162-.748.114-.82-.048-.072-.174-.114-.366-.21-.192-.096-1.138-.562-1.314-.626-.176-.064-.304-.096-.432.096-.128.192-.496.626-.608.754-.112.128-.224.144-.416.048-.192-.096-.81-.3-1.544-.954-.57-.508-.956-1.136-1.068-1.328-.112-.192-.012-.296.084-.392.086-.086.192-.224.288-.336.096-.112.128-.192.192-.32.064-.128.032-.24-.016-.336-.048-.096-.432-1.04-.592-1.424-.156-.374-.316-.324-.432-.324z"/>
+    </svg>
+  </a>
+
+  <button id="back-to-top-btn" class="back-to-top flex animate-fade-in" aria-label="Scroll back to top">
+    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+    </svg>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
